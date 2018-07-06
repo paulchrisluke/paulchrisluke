@@ -1,0 +1,29 @@
+{
+  "bookend-version": "v1.0",
+  "share-providers": [
+    "facebook",
+    "twitter",
+    "email"
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": "Contact"
+    },
+    {
+      "type": "medium",
+      "title": "Follow On Instagram",
+      "url": "https://instagram.com/zhenimages",
+      "image": "assets/bookend_cats.jpg"
+    },
+    {
+      "type": "cta-link",
+      "links": [
+        {
+          "text": "Contact",
+          "url": "https://www.instagram.com/zhenimages"
+        }
+      ]
+    }
+  ]
+}

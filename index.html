@@ -1,47 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Minimal Multipage PWA</title>
-  <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#0096ff">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="inline.css">
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <title>Zhen Images</title>
+    <link rel="canonical" href="index.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+               <meta name="amp-experiments-opt-in" content="amp-story">
+
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:200,300,400" rel="stylesheet">
+    <style amp-custom>
+        amp-story {
+            font-family: 'Tajawal', sans-serif;
+            color: rgb(255, 255, 255, .7);
+        }
+
+        amp-story-page {
+            background-color: #000;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 2.875em;
+            line-height: 1.174;
+            text-align: right;
+        }
+
+        p,
+            {
+            font-weight: normal;
+            font-size: 1.3em;
+            line-height: 1.5em;
+            color: rgb(255, 255, 255, .7);
+        }
+
+        q,
+        a {
+            font-weight: 300;
+            font-size: 1.1em;
+
+        }
+
+        a {
+            font-weight: 300;
+            font-size: 1.1em;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(255, 255, 255, .9);
+            border-top: rgb(255, 255, 255, .9);
+            border-top-width: 2px;
+            border-top-style: double;
+
+        }
+
+        amp-story-grid-layer.bottom {
+            align-content: end;
+        }
+
+        amp-story-grid-layer.noedge {
+            padding: 0px;
+        }
+
+        amp-story-grid-layer.center-text {
+            align-content: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+        }
+
+        .banner-text {
+            text-align: center;
+            background-color: #000;
+            line-height: 2em;
+        }
+    </style>
 </head>
+
 <body>
-  <div id="app">
-    <!-- app-shell -->
-    <header> A </header>
-    <ul>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-      <li><img class="skeleton" src="skeleton.svg"></li>
-    </ul>
-    <footer> 
-      <a href="index.html" class="active"> A </a>
-      <a href="skeleton.html"> Skeleton </a>
-      <a href="b.html"> B </a>
-    </footer>
-  </div>
-  <script type="text/javascript">
-    // in this demo, we only register SW from entry A
-    if(navigator.serviceWorker){
-      navigator.serviceWorker
-        // registering the sw.js under this project's root
-        // will override the sw.js set by parents (e.g. huangxuan.me)
-        .register('./sw.js')
-        .then((reg) => {
-          console.log('Service Worker Registered. ', reg)
-        })
-        .catch((error) => {
-          console.log('Service Worker registration failed: ', error)
-        })
-    }
-  </script>
-  <script async type="text/javascript" src="app.js"></script>
+    <!-- Cover page -->
+    <amp-story standalone title="Zhen Images" publisher="Zhen Images" publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="assets/20150508_4804_V08J_Music_to_Their_Souls_1280_Vertical.jpg">
+        <amp-story-page id="cover">
+            <amp-story-grid-layer template="fill">
+                <div animate-in="zoom-in" animate-in-duration="200s" class="img-container">
+                    <amp-img src="assets/20150508_4804_V08J_Music_to_Their_Souls_1280_Vertical.jpg" width="720" height="1280" layout="responsive">
+                    </amp-img>
+                </div>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+                <h1 animate-in="fade-in" animate-in-delay="0.4s">Zhen Images</h1>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom">
+                <a animate-in="fade-in" animate-in-delay="1.3s" href="https://www.instagram.com/zhenimages">@zhenimages</a>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <!-- Page 1 -->
+        <amp-story-page id="page1">
+            <amp-story-grid-layer template="vertical">
+                <div animate-in="zoom-in" animate-in-duration="200s" class="img-container">
+                    <amp-img src="assets/20170201_0392_V04J_East_Meets_West_1280_w.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
+                </div>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom">
+                <a href="https://www.instagram.com/zhenimages">@zhenimages</a>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <!-- Page 2 -->
+        <amp-story-page id="page2">
+            <amp-story-grid-layer template="fill">
+                <div animate-in="zoom-in" animate-in-duration="200s" class="img-container">
+                    <amp-img src="assets/20180610_0808_V13J_A_Ballet_for_One_Large_Frame_1280_Vertical.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
+                </div>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom">
+                <a href="https://www.instagram.com/zhenimages">@zhenimages</a>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <!-- Page 3 -->
+        <amp-story-page id="page3">
+            <amp-story-grid-layer template="fill">
+                <div animate-in="zoom-in" animate-in-duration="200s" class="img-container">
+                    <amp-img src="assets/20180317_0436_V02J_Three_Sisters_2_1280_w.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
+                </div>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom">
+                <a href="https://www.instagram.com/zhenimages">@zhenimages</a>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <!-- Page 4 -->
+        <amp-story-page id="page4">
+            <amp-story-grid-layer template="fill">
+                <div animate-in="zoom-in" animate-in-duration="200s" class="img-container">
+                    <amp-img src="assets/20180610_0436_V03J_Guarded_1280_w.jpg" layout="responsive" width="720" height="1280">
+                    </amp-img>
+                </div>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom">
+                <a href="https://www.instagram.com/zhenimages">@zhenimages</a>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <!-- Bookend -->
+        <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
 </body>
 </html>
