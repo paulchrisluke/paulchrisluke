@@ -1,6 +1,6 @@
 {
-  "bookend-version": "v1.0",
-  "share-providers": [
+  "bookendVersion": "v1.0",
+  "shareProviders": [
     "facebook",
     "twitter",
     "email"
@@ -8,20 +8,35 @@
   "components": [
     {
       "type": "heading",
-      "text": "Contact"
+      "text": "More to read"
     },
     {
-      "type": "medium",
-      "title": "Follow On Instagram",
-      "url": "https://instagram.com/paulchrisluke",
-      "image": "assets/bookend_cats.jpg"
+      "type": "portrait",
+      "title": "Read the Blog Post",
+      "url": "https://medium.com/@PaulChrisLuke",
+      "image": "assets/meredith.jpg",
+      "category": "blog"
+    },
+    {
+      "type": "portrait",
+      "title": "Read the Blog Post",
+      "url": "https://medium.com/@PaulChrisLuke",
+      "image": "assets/meredith.jpg",
+      "category": "blog"
+    },
+    {
+      "type": "portrait",
+      "title": "Read the Blog Post",
+      "url": "https://medium.com/@PaulChrisLuke",
+      "image": "assets/meredith.jpg",
+      "category": "blog"
     },
     {
       "type": "cta-link",
       "links": [
         {
-          "text": "Contact",
-          "url": "https://www.instagram.com/paulchrisluke"
+          "text": "Learn more",
+          "url": "https://www.paulchrisluke.com"
         }
       ]
     }
